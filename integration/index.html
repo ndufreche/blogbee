@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>BlogBee Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="header-section">
+            <header class="row header">
+                <div class="col-xs-8">
+                    <h1 class="site-title h1">BlogBee <small>community blog</small></h1>
+                </div>
+                <section class="login-section col-xs-4 text-righ">
+                    <button class="btn btn-success pull-right" href="/login">login / create account</button>
+                </section>
+            </header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse row">
+                        <section class="hidden-xs category-list-section col-sm-9">
+                            <ul class="nav navbar-nav list-unstyled list-inline row">
+                                <li class="col-sm-2 text-nowrap"><a href="/category-1">category 1</a></li>
+                                <li class="col-sm-2 text-nowrap"><a href="/category-2">category 2</a></li>
+                                <li class="col-sm-2 text-nowrap"><a href="/category-3">category 3</a></li>
+                                <li class="col-sm-2 text-nowrap"><a href="/category-4">category 4</a></li>
+                                <li class="col-sm-2 text-nowrap"><a href="/category-5">category 5</a></li>
+                                <li class="col-sm-2 text-nowrap"><a href="/category-6">category 6</a></li>
+                            </ul>
+                        </section>
+                        <section class="col-xs-12 col-sm-3 search-section">
+                            <form action="/search" method="post" class="form-inline">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon btn-search-form btn-reset"><button type="reset" class="btn btn-warning glyphicon glyphicon-remove-sign"></button></span>
+                                        <input type="text" class="input form-control" placeholder="search">
+                                        <span class="input-group-addon btn-search-form btn-submit"><button type="submit" class="btn btn-primary glyphicon glyphicon-search"></button></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </nav>
+            <aside class="row">
+            </aside>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-xs-12">
+                <section id="top-article" class="container-section">
+                    <div>
+                        <h3 class="h1">Top articles</h3>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li>
+                            <article class="article">
+                                <header>
+                                    <h2 class="article-title">Article title</h2>
+                                    <section class="article-author-section">
+                                        <p>
+                                            <a href="/author/author-name" class="article-author">Author name</a>
+                                            <span class="badge pull-right alert-info">10k read / 1.2k share</span>
+                                        </p>
+                                    </section>
+                                </header>
+                                <section class="row article-abstract-section">
+                                    <div class="col-xs-2">
+                                        <figure class="row">
+                                            <img class="img-thumbnail col-xs-12" src="img/article.png" alt="article picture">
+                                            <ficaption>Picture credit</ficaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.</p>
+                                    </div>
+                                </section>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="article">
+                                <header>
+                                    <h2 class="article-title">Article title</h2>
+                                    <section class="article-author-section">
+                                        <p>
+                                            <a href="/author/author-name" class="article-author">Author name</a>
+                                            <span class="badge pull-right alert-info">10k read / 1.2k share</span>
+                                        </p>
+                                    </section>
+                                </header>
+                                <section class="row article-abstract-section">
+                                    <div class="col-xs-2">
+                                        <figure class="row">
+                                            <img class="img-thumbnail col-xs-12" src="img/article.png" alt="article picture">
+                                            <ficaption>Picture credit</ficaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.</p>
+                                    </div>
+                                </section>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="article">
+                                <header>
+                                    <h2 class="article-title">Article title</h2>
+                                    <section class="article-author-section">
+                                        <p>
+                                            <a href="/author/author-name" class="article-author">Author name</a>
+                                            <span class="badge pull-right alert-info">10k read / 1.2k share</span>
+                                        </p>
+                                    </section>
+                                </header>
+                                <section class="row article-abstract-section">
+                                    <div class="col-xs-2">
+                                        <figure class="row">
+                                            <img class="img-thumbnail col-xs-12" src="img/article.png" alt="article picture">
+                                            <ficaption>Picture credit</ficaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.</p>
+                                    </div>
+                                </section>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="article">
+                                <header>
+                                    <h2 class="article-title">Article title</h2>
+                                    <section class="article-author-section">
+                                        <p>
+                                            <a href="/author/author-name" class="article-author">Author name</a>
+                                            <span class="badge pull-right alert-info">10k read / 1.2k share</span>
+                                        </p>
+                                    </section>
+                                </header>
+                                <section class="row article-abstract-section">
+                                    <div class="col-xs-2">
+                                        <figure class="row">
+                                            <img class="img-thumbnail col-xs-12" src="img/article.png" alt="article picture">
+                                            <ficaption>Picture credit</ficaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.</p>
+                                    </div>
+                                </section>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+                <section id="lastest-article"  class="container-section">
+                    <div>
+                        <h3 class="h1">Lastest articles</h3>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li>
+                            <article class="article">
+                                <header>
+                                    <h2 class="article-title">Article title</h2>
+                                    <section class="article-author-section">
+                                        <p>
+                                            <a href="/author/author-name" class="article-author">Author name</a>
+                                            <span class="badge pull-right alert-info">10k read / 1.2k share</span>
+                                        </p>
+                                    </section>
+                                </header>
+                                <section class="row article-abstract-section">
+                                    <div class="col-xs-2">
+                                        <figure class="row">
+                                            <img class="img-thumbnail col-xs-12" src="img/article.png" alt="article picture">
+                                            <ficaption>Picture credit</ficaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.</p>
+                                    </div>
+                                </section>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="article">
+                                <header>
+                                    <h2 class="article-title">Article title</h2>
+                                    <section class="article-author-section">
+                                        <p>
+                                            <a href="/author/author-name" class="article-author">Author name</a>
+                                            <span class="badge pull-right alert-info">10k read / 1.2k share</span>
+                                        </p>
+                                    </section>
+                                </header>
+                                <section class="row article-abstract-section">
+                                    <div class="col-xs-2">
+                                        <figure class="row">
+                                            <img class="img-thumbnail col-xs-12" src="img/article.png" alt="article picture">
+                                            <ficaption>Picture credit</ficaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.</p>
+                                    </div>
+                                </section>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="article">
+                                <header>
+                                    <h2 class="article-title">Article title</h2>
+                                    <section class="article-author-section">
+                                        <p>
+                                            <a href="/author/author-name" class="article-author">Author name</a>
+                                            <span class="badge pull-right alert-info">10k read / 1.2k share</span>
+                                        </p>
+                                    </section>
+                                </header>
+                                <section class="row article-abstract-section">
+                                    <div class="col-xs-2">
+                                        <figure class="row">
+                                            <img class="img-thumbnail col-xs-12" src="img/article.png" alt="article picture">
+                                            <ficaption>Picture credit</ficaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.</p>
+                                    </div>
+                                </section>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="article">
+                                <header>
+                                    <h2 class="article-title">Article title</h2>
+                                    <section class="article-author-section">
+                                        <p>
+                                            <a href="/author/author-name" class="article-author">Author name</a>
+                                            <span class="badge pull-right alert-info">10k read / 1.2k share</span>
+                                        </p>
+                                    </section>
+                                </header>
+                                <section class="row article-abstract-section">
+                                    <div class="col-xs-2">
+                                        <figure class="row">
+                                            <img class="img-thumbnail col-xs-12" src="img/article.png" alt="article picture">
+                                            <ficaption>Picture credit</ficaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.</p>
+                                    </div>
+                                </section>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-sm-4 col-md-3 col-md-offset-1 hidden-xs">
+                <aside>
+                    <section>
+                        <h4>top contributors :</h4>
+                        <ul class="list-unstyled top-author-section">
+                            <li class="top-author-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <figure class="row">
+                                            <img class="col-sm-12 img-thumbnail" src="img/author.png" alt="author picture">
+                                        </figure>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <span>
+                                            <a href="/author/author-name">Author name</a>
+                                            <p>14 articles, 250 comments</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="top-author-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <figure class="row">
+                                            <img class="col-sm-12 img-thumbnail" src="img/author.png" alt="author picture">
+                                        </figure>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <span>
+                                            <a href="/author/author-name">Author name</a>
+                                            <p>14 articles, 250 comments</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="top-author-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <figure class="row">
+                                            <img class="col-sm-12 img-thumbnail" src="img/author.png" alt="author picture">
+                                        </figure>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <span>
+                                            <a href="/author/author-name">Author name</a>
+                                            <p>14 articles, 250 comments</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="top-author-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <figure class="row">
+                                            <img class="col-sm-12 img-thumbnail" src="img/author.png" alt="author picture">
+                                        </figure>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <span>
+                                            <a href="/author/author-name">Author name</a>
+                                            <p>14 articles, 250 comments</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="top-author-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <figure class="row">
+                                            <img class="col-sm-12 img-thumbnail" src="img/author.png" alt="author picture">
+                                        </figure>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <span>
+                                            <a href="/author/author-name">Author name</a>
+                                            <p>14 articles, 250 comments</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </aside>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul class="row list-unstyled">
+                <li class="col-xs-3 text-left"><a href="http://www.backbee.com/">Build with BackBee</a></li>
+                <li class="col-xs-3 text-center"><a href="https://backbee.github.com/blogbee">BlogBee tuorial</a></li>
+                <li class="col-xs-3 text-center"><a href="http://github.com/backbee/blogbee">github repository</a></li>
+                <li class="col-xs-3 text-right"><a href="http://www.lp-digital.fr/en/">lp digital system &copy;</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
