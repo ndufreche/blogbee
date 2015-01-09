@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="utf-8"></meta>
-    <title>BlogBee - Home</title>
+    <title>BlogBee - Category 0</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -51,7 +51,7 @@
             <div class="col-sm-8 col-xs-12">
                 <section id="top-article" class="container-section">
                     <div>
-                        <h3 class="h1">Top articles</h3>
+                        <h3 class="h1">Top articles of category <span class="category-id">0</span></h3>
                     </div>
                     <ul class="list-unstyled">
                         <li>
@@ -170,7 +170,7 @@
                 </section>
                 <section id="lastest-article"  class="container-section">
                     <div>
-                        <h3 class="h1">Lastest articles</h3>
+                        <h3 class="h1">Lastest articles of category <span class="category-id">0</span></h3>
                     </div>
                     <ul class="list-unstyled">
                         <li>
@@ -291,7 +291,7 @@
             <div class="col-sm-4 col-md-3 col-md-offset-1 hidden-xs">
                 <aside>
                     <section>
-                        <h4>top contributors :</h4>
+                        <h4>top contributors of category <span class="category-id">0</span> :</h4>
                         <ul class="list-unstyled top-author-section">
                             <li class="top-author-item">
                                 <div class="row">
@@ -428,5 +428,18 @@
     </section>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var setCategoryId = function () {
+            var hash = window.location.hash.substring(1);
+            jQuery('.category-id').html(hash);
+            document.title = 'BlogBee - Category ' + hash;
+        }
+
+        jQuery(window).on('hashchange', function() {
+          setCategoryId();
+        });
+
+        setCategoryId();
+    </script>
 </body>
 </html>
