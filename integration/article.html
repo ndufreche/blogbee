@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="utf-8"></meta>
-    <title>BlogBee Home</title>
+    <title>BlogBee - Article</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -14,7 +14,7 @@
                     <h2 class="site-title h1"><a class="link-unstyled" href="index.html">BlogBee <small>community blog</small></a></h2>
                 </div>
                 <section class="login-section col-xs-4 text-righ">
-                    <button class="btn btn-success pull-right" href="/login">login / create account</button>
+                    <button class="btn btn-success pull-right" href="/login" data-toggle="modal" data-target="#authentication-modal">login / create account</button>
                 </section>
             </header>
             <nav class="navbar navbar-default">
@@ -22,12 +22,12 @@
                     <div class="collapse navbar-collapse row">
                         <section class="hidden-xs category-list-section col-sm-9">
                             <ul class="nav navbar-nav list-unstyled list-inline row">
-                                <li class="col-sm-2 text-nowrap"><a href="/category.html?id=1">category 1</a></li>
-                                <li class="col-sm-2 text-nowrap"><a href="/category.html?id=2">category 2</a></li>
-                                <li class="col-sm-2 text-nowrap"><a href="/category.html?id=3">category 3</a></li>
-                                <li class="col-sm-2 text-nowrap"><a href="/category.html?id=4">category 4</a></li>
-                                <li class="col-sm-2 text-nowrap"><a href="/category.html?id=5">category 5</a></li>
-                                <li class="col-sm-2 text-nowrap"><a href="/category.html?id=6">category 6</a></li>
+                                <li class="col-sm-2 text-nowrap"><a href="category.html#1">category 1</a></li>
+                                <li class="col-sm-2 text-nowrap"><a href="category.html#2">category 2</a></li>
+                                <li class="col-sm-2 text-nowrap"><a href="category.html#3">category 3</a></li>
+                                <li class="col-sm-2 text-nowrap"><a href="category.html#4">category 4</a></li>
+                                <li class="col-sm-2 text-nowrap"><a href="category.html#5">category 5</a></li>
+                                <li class="col-sm-2 text-nowrap"><a href="category.html#6">category 6</a></li>
                             </ul>
                         </section>
                         <section class="col-xs-12 col-sm-3 search-section">
@@ -141,7 +141,7 @@
                 </aside>
             </div>
         </div>
-        <footer class="footer">
+        <footer class="footer page-footer">
             <ul class="row list-unstyled">
                 <li class="col-xs-3 text-left"><a href="http://www.backbee.com/">Build with BackBee</a></li>
                 <li class="col-xs-3 text-center"><a href="https://backbee.github.com/blogbee">BlogBee tuorial</a></li>
@@ -150,5 +150,46 @@
             </ul>
         </footer>
     </div>
+    <section id="modals">
+        <div class="modal fade" id="authentication-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="modal-label">Authentication</h4>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="authtentication-btn">
+                            <button type="button" class="btn btn-primary btn-lg col-xs-offset-2  col-xs-8">
+                                <span class="authtentication-icon-btn pull-left">
+                                    <img src="img/social-media-icons/48x48/48x48_facebook.png">
+                                </span>
+                                <span class="authtentication-text-btn">
+                                    Log in with Facebook
+                                </span>
+                            </button>
+                        </div>
+                        <div class="authtentication-btn">
+                            <button type="button" class="btn btn-primary btn-lg col-xs-offset-2  col-xs-8">
+                                <span class="authtentication-icon-btn pull-left">
+                                    <img src="img/social-media-icons/48x48/48x48_googleplus.png">
+                                </span>
+                                <span class="authtentication-text-btn">
+                                    Log in with Google
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        jQuery('.authtentication-btn').click(function () {
+            window.location = 'user-form.html'
+        });
+    </script>
 </body>
 </html>
