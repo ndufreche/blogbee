@@ -1,0 +1,17 @@
+{
+    "name": "backbee/backbee-standard",
+    "description": "BackBee CMS Standard Edition distribution",
+    "keywords": ["CMS", "Core", "Content Management", "No backend CMS", "User Management"],
+    "type": "project",
+    "license": "GPL-3.0+",
+    "require": {
+        "backbee/backbee": "0.11.1*@dev",
+        "backbee/demo-bundle": "0.11.1*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "BackBuilder\\Standard\\": ""
+        }
+    },
+    "minimum-stability": "dev"
+}
