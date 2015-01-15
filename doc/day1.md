@@ -44,7 +44,7 @@ Also, check your PHP version which should be 5.4 or least.
 ![PHP on cmder](http://i.imgur.com/DkgQJz2.png "PHP")
 
 
-Finaly, you need to set a domain net server in your operating system.
+Eventually, you need to set a domain name in your operating system.
 On Unix/Linux based OS, you can add it into ``/etc/hosts`` file:
 
     127.0.0.1   blogbee.dev
@@ -57,7 +57,7 @@ Then you also need to set a correct date.timezone in your ``php.ini`` configurat
     [Date]
     date.timezone=Europe/Paris
 
-Ok ! We can now finaly launch the installation process.
+Ok ! We can now launch the installation process.
 
 Installation
 --------------
@@ -74,34 +74,38 @@ And you should see the first installation step of BackBee:
 
 ![BackBee Installer - first step](http://i.imgur.com/saok4nc.png "BackBee Installer - first step")
 
-As you see, you need to create ``cache`` and ``log`` folders with the correct rights, then you can refresh the page and access to the **second step** of the installer.
+You need to create ``cache`` and ``log`` folders with the correct rights, then you can refresh the page and access to the **second step** of the installer.
 
 ![BackBee Installer - step 2](http://i.imgur.com/YBUecHz.png "BackBee Installer - step 2")
 
 If required, check the ``repository/Config`` folder rights and then access to the **third** step.
 
-You need to set your database settings. If you have MySQL or MariaDB database engine, you have nothing to change, only fill the fields **database name**, **username** and **password**.
+You need to set your database settings. If you use different database engine than MySQL or MariaDB, set the correct driver else you have nothing to change, only fill the fields **database name**, **username** and **password**.
 
 ![BackBee Installer - step 3](http://i.imgur.com/ylWQZPm.png "BackBee Installer - step 3")
 
-BackBee Installer create and populate the database, fill the last informations to complete the installation process: the **site_name** and the **domain**.
+BackBee Installer creates and populates the database, fill the last informations to complete the installation process: the **site_name** and the **domain**.
 
 ![BackBee Installer - step 4](http://i.imgur.com/OMhfsrI.png "BackBee Installer - step 4")
 
-Finaly, you have done: BackBee give you the ``Apache`` or ``nginx`` configuration you have to set to be able to use BackBee on the choosen domain.
+You are done: BackBee gives you the ``Apache`` or ``Nginx`` configuration you have to set to be able to use BackBee on the choosen domain.
 
 ![BackBee Installer - step 5](http://i.imgur.com/hvdhOjN.png "BackBee Installer - step 5")
 
-When you have set your HTTP server, access to **[http://blogbee.dev](http://blogbee.dev)**.
+When you have set your web server, access to **[http://blogbee.dev](http://blogbee.dev)**.
 
-Log into into "Edition mode", and it's done you have successfully installed BackBee:
+If everything is correctly installed, you should see the BackBee welcome message:
+
+![BackBee welcome message](http://i.imgur.com/rWY8IQk.png "BackBee welcome message")
+
+You can even connect to the "Edition mode", press  ``CTRL + ALT + B`` to show the login dialog. Note that we created a super admin user for you with login (=admin) and password (=admin).
 
 ![BackBee Installed - Edition mode](http://i.imgur.com/3LBfnBL.png "BackBee Installed - Edition mode")
 
 Final thoughts
 ============
 
-Well, time is over! Even if we have not yet started talking about BackBee, we have setup a solid development environment,  and we are ready to start coding.
+Well, time is over! Even if we have not yet started talking about BackBee, we have setup a solid development environment and we are ready to start coding.
 
-Tomorrow, we will reveal what the application will do and talk about the requirements we need to implement for **BlogBee**.
+Tomorrow, we will unveil what the application will do and talk about the requirements we need to implement for **BlogBee**.
 
