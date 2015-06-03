@@ -1,0 +1,9 @@
+vendor/
+repository/Config/bootstrap.yml
+repository/Config/security.yml
+repository/Config/sites.yml
+repository/Config/doctrine.yml
+repository/Resources/toolbar/
+repository/Data/
+cache/
+log/

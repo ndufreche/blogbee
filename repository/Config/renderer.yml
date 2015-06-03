@@ -5,8 +5,8 @@ bb_scripts_directory:
     form: %bbapp.base.dir%/Form/Templates/scripts
 
 adapter:
-    - BackBuilder\Renderer\Adapter\Twig
-    - BackBuilder\Renderer\Adapter\phtml
+    - BackBee\Renderer\Adapter\Twig
+    - BackBee\Renderer\Adapter\phtml
 
 path:
     scriptdir: Templates/scripts

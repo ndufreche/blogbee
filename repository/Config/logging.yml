@@ -1,5 +1,5 @@
 # logger configuration
 
-appender: BackBuilder\Logging\Appender\File
+appender: BackBee\Logging\Appender\File
 logfile: log/backbee.log
 level: ERROR
