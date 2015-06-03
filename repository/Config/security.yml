@@ -1,7 +1,4 @@
 firewalls:
-    front_area:
-        pattern: ^/
-        anonymous: ~
-
+    front_area: { pattern: ^/, anonymous: null }
 sudoers:
-    admin: 1
+    ndufreche: 1

@@ -1,0 +1,15 @@
+vendor/
+repository/Config/bootstrap.yml
+repository/Config/security.yml
+repository/Config/site.yml
+repository/Config/doctrine.yml
+repository/Resources/toolbar/
+repository/Data/
+cache/
+log/
+
+bootstrap.yml
+composer.lock
+doctrine.yml
+services.yml
+sites.yml
