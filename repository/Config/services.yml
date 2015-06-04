@@ -1,0 +1,5 @@
+parameters:
+    bbapp.cache.dir: /var/www/html/standard/1.0/cache
+    bbapp.log.dir: /var/www/html/standard/1.0/log
+    bbapp.data.dir: /var/www/html/standard/1.0/repository/Data
+    secret_key: ThisSecretKeyMustBeChanged

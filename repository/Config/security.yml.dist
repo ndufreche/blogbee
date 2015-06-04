@@ -1,0 +1,4 @@
+firewalls:
+    front_area:
+        pattern: ^/
+        anonymous: ~

@@ -1,5 +1,0 @@
-one_column:
-  extends: \BackBuilder\ClassContent\ContentSet
-  properties:
-    name: One column
-    category: [!Container]

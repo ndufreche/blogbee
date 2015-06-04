@@ -4,14 +4,58 @@
     "keywords": ["CMS", "Core", "Content Management", "No backend CMS", "User Management"],
     "type": "project",
     "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Eric Chau",
+            "email": "eric.chau@lp-digital.fr"
+        }
+    ],
     "require": {
-        "backbee/backbee": "0.11.1*@dev",
-        "backbee/demo-bundle": "0.11.1*@dev"
+        "php": ">=5.4.0",
+        "backbee/backbee": "1.0.0",
+        "backbee/script-handler": "1.0.0",
+        "backbee/demo-bundle": "1.0.0",
+        "backbee/toolbar-bundle": "1.0.0",
+        "backbee/bb-core-js": "1.0.0"
     },
     "autoload": {
         "psr-4": {
-            "BackBuilder\\Standard\\": ""
+            "BackBee\\Standard\\": ""
         }
     },
-    "minimum-stability": "dev"
+    "scripts": {
+        "post-install-cmd": [
+            "BackBee\\Standard\\Composer\\ScriptHandler::buildParameters",
+            "BackBee\\Standard\\Composer\\ScriptHandler::buildBackBeeStructure",
+            "BackBee\\Standard\\Composer\\ScriptHandler::buildBootstrap",
+            "BackBee\\Standard\\Composer\\ScriptHandler::buildDoctrineConfig",
+            "BackBee\\Standard\\Composer\\ScriptHandler::buildServicesConfig",
+            "BackBee\\Standard\\Composer\\ScriptHandler::clearBackBeeInstall",
+            "BackBee\\Standard\\Composer\\ScriptHandler::moveClient"
+        ],
+        "post-update-cmd": [
+            "BackBee\\Standard\\Composer\\ScriptHandler::buildParameters",
+            "BackBee\\Standard\\Composer\\ScriptHandler::buildBackBeeStructure",
+            "BackBee\\Standard\\Composer\\ScriptHandler::buildBootstrap",
+            "BackBee\\Standard\\Composer\\ScriptHandler::buildDoctrineConfig",
+            "BackBee\\Standard\\Composer\\ScriptHandler::buildServicesConfig",
+            "BackBee\\Standard\\Composer\\ScriptHandler::clearBackBeeInstall",
+            "BackBee\\Standard\\Composer\\ScriptHandler::moveClient"
+        ]
+    },
+    "extra": {
+        "prompt": true,
+        "generate-structure": true,
+        "backbee-cache-dir": "cache",
+        "backbee-log-dir": "log",
+        "backbee-data-dir": "./repository/Data",
+        "incenteev-parameters": [
+            {
+                "file": "repository/Config/parameters.yml"
+            }
+        ],
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
 }
