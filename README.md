@@ -2,7 +2,7 @@ This branch is the result you get when you finish day 2 of blogbee tutorial (exc
 
 The following installation instructions consider that you have already installed the application requirements such as git, composer, php and nginx or apache2, if not, see [blogbee tutorial day1](https://github.com/backbee/blogbee-docs/blob/master/doc/day1.md)
 
-The result of the integration is available integration folder.
+The result of the integration is available in integration folder.
 
 
 How to install Day 2 results:
